@@ -13,7 +13,7 @@ import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
 import AboutPage from './AboutPage/AboutPage';
 import LoginPage from './Loginpage/LoginPage'; 
-
+import BudgetPage from './BudgetPage/BudgetPage'; 
 function App() {
   return (
     <div>
@@ -23,7 +23,8 @@ function App() {
         <div className="mainContainer">
           <Routes>
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/login" element={<LoginPage />} /> {/* Use LoginPage component */}
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/budget" element={<BudgetPage />} />
             <Route path="/" element={<HomePage />} />
           </Routes>
         </div>
